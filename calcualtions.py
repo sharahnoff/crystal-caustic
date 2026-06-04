@@ -265,7 +265,7 @@ def get_borders(phi, opt):
 def get_Kzero(opt):
     theta_z = []
     phi_z = []
-    for phi in np.linspace(0, np.pi / 2, 90):
+    for phi in np.linspace(0, np.pi / 2, 270):
         borders = get_borders(phi, opt)
         for l, r in borders:
             Kl = get_K(l, phi, opt)
